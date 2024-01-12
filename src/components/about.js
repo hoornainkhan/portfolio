@@ -5,7 +5,7 @@ import { CiCirclePlus } from "react-icons/ci";
 
 const about = () => {
   return (
-    <div className='bg-light-pinky h-screen text-text-brown '>
+    <div id='about' className='bg-light-pinky h-screen text-text-brown '>
       <h5 className='text-pinky text-base text-center pt-12'>SERVICE</h5>
       <h1 className='pt-7 text-center text-6xl font-bold'>What Can I <br /> Help You With?</h1>
       <div className="content mt-20 flex justify-center">

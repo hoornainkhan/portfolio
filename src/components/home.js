@@ -7,12 +7,9 @@ const Home = () => {
   const skills = ["Frontend Developer", "UI/UX Designer", "Graphic Designer"];
 
   useEffect(() => {
-    // Set an interval to change the skill every 3 seconds (adjust the interval as needed)
     const intervalId = setInterval(() => {
       setCurrentSkillIndex((prevIndex) => (prevIndex + 1) % skills.length);
-    }, 3000); // Interval in milliseconds
-
-    // Clean up the interval when the component is unmounted
+    }, 3000);
     return () => {
       clearInterval(intervalId);
     };
@@ -46,7 +43,7 @@ const Home = () => {
         </div>
         <div className="img min-h-screen flex items-center">
           <div className="bg-banana rounded-t-full">
-            <img src={profile} alt="profile" className="w-60 rounded object-cover relative" />
+            <img src={profile} alt="profile" className="w-60 rounded object-cover" />
           </div>
           
         </div>
